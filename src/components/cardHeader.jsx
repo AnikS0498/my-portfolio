@@ -10,6 +10,7 @@ class cardHeader extends Component {
       <CardHeader
         avatar={
           <Avatar
+            // src="./public/dp.jpg"
             sx={{ bgcolor: deepOrange[500] }}
             aria-label="display-picture"
           >
