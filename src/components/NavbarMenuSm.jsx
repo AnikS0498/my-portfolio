@@ -56,7 +56,9 @@ export default function NavbarMenuSm({ open, anchorEl, close }) {
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
-            <Mail />
+            <Link>
+              <Mail href="mailto:anikeshsinha041198@gmail.com"/>
+            </Link>
           </ListItemIcon>
           <ListItemText>Email</ListItemText>
         </MenuItem>

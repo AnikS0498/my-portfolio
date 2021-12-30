@@ -51,7 +51,7 @@ function Navbar(props) {
             </IconButton>
           ) : null}
           {!isMobile ? (
-            <IconButton color="inherit" sx={{ marginLeft: "2%" }}>
+            <IconButton color="inherit" sx={{ marginLeft: "2%" }} href="mailto:anikeshsinha041198@gmail.com">
               <MailIcon />
             </IconButton>
           ) : null}
