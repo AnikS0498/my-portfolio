@@ -32,35 +32,43 @@ export default function NavbarMenuSm({ open, anchorEl, close }) {
       >
         <MenuItem>
           <ListItemIcon>
+            <GitHub />
             <Link
               href="https://github.com/AnikS0498"
               target="_blank"
               color="inherit"
+              underline="none"
             >
-              <GitHub />
+              <ListItemText className="mx-2">Github</ListItemText>
             </Link>
           </ListItemIcon>
-          <ListItemText>Github</ListItemText>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
+            <LinkedIn />
+
             <Link
               href="https://www.linkedin.com/in/aniks0498"
               target="_blank"
               color="inherit"
+              underline="none"
             >
-              <LinkedIn />
+              <ListItemText className="mx-2">LinkedIn</ListItemText>
             </Link>
           </ListItemIcon>
-          <ListItemText>LinkedIn</ListItemText>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
-            <Link href="mailto:anikeshsinha041198@gmail.com" target="_blank" color="inherit">
-              <Mail/>
+            <Mail />
+            <Link
+              href="mailto:anikeshsinha041198@gmail.com"
+              target="_blank"
+              color="inherit"
+              underline="none"
+            >
+              <ListItemText className="mx-2">Email</ListItemText>
             </Link>
           </ListItemIcon>
-          <ListItemText>Email</ListItemText>
         </MenuItem>
       </Menu>
     </div>

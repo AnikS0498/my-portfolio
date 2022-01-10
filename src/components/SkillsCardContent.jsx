@@ -5,6 +5,7 @@ import {
   ListItemButton,
   ListItemText,
   Collapse,
+  Link,
 } from "@mui/material";
 import React, { Component } from "react";
 import { Typography } from "@mui/material";
@@ -18,6 +19,7 @@ class SkillsCardContent extends Component {
       databaseSkillDropdown: false,
       frameworkDropdown: false,
       libraryDropdown: false,
+      salesforceDropdown: false,
     };
   }
 
@@ -26,7 +28,6 @@ class SkillsCardContent extends Component {
       this.setState({
         databaseSkillDropdown: !this.state.databaseSkillDropdown,
       });
-      // console.log(this.state.databaseSkillDropdown);
     };
 
     const handleFrameworkDropdownClick = () => {
@@ -40,6 +41,12 @@ class SkillsCardContent extends Component {
         libraryDropdown: !this.state.libraryDropdown,
       });
     };
+
+    const handleSalesforceDropDownClick = () => {
+      this.setState({
+        salesforceDropdown: !this.state.salesforceDropdown,
+      });
+    };
     return (
       <CardContent>
         <Typography variant="h6" color="text.primary">
@@ -49,9 +56,23 @@ class SkillsCardContent extends Component {
           <ListItem>
             <ListItemText secondary="JEE Fullstack developer" />
           </ListItem>
-          <ListItem>
+          <ListItemButton onClick={handleSalesforceDropDownClick}>
             <ListItemText secondary="Salesforce Certified Platform Developer I" />
-          </ListItem>
+            {this.state.salesforceDropdown ? <ExpandLess /> : <ExpandMore />}
+          </ListItemButton>
+          <Collapse in={this.state.salesforceDropdown}>
+            <ListItem sx={{ pl: 4 }}>
+              <Link
+                underline="none"
+                target="_blank"
+                href="https://trailblazer.me/id/asinha0498"
+                color="inherit"
+              >
+                <ListItemText secondary="Trailblazer profile" />
+              </Link>
+            </ListItem>
+          </Collapse>
+
           <ListItemButton onClick={handleDatabaseButtonClick}>
             <ListItemText secondary="Databases" />
             {this.state.databaseSkillDropdown ? <ExpandLess /> : <ExpandMore />}

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { CardHeader } from "@mui/material";
 import { Avatar } from "@mui/material";
 import { IconButton } from "@mui/material";
-import { deepOrange } from "@mui/material/colors";
+import avatar from "../static/images/dp.png";
 
 class cardHeader extends Component {
   render() {
@@ -10,11 +10,11 @@ class cardHeader extends Component {
       <CardHeader
         avatar={
           <Avatar
-            // src="./public/dp.jpg"
-            sx={{ bgcolor: deepOrange[500] }}
+            src={avatar}
+            sx={{ width: 80, height: 80 }}
             aria-label="display-picture"
           >
-            AS
+            {/* AS */}
           </Avatar>
         }
         action={<IconButton aria-label=""></IconButton>}

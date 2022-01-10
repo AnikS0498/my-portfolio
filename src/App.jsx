@@ -1,10 +1,9 @@
-import CardComponent from "./components/cardComponent";
+import CardComponent from "./components/CardComponent";
 
 function App() {
   return (
     <div>
       <CardComponent />
-      
     </div>
   );
 }

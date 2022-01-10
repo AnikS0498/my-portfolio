@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function Footer(props) {
-    return (
-        <div className='footer'>
-            <footer>Made with ❤️ by Anikesh</footer>
-        </div>
-    );
+  return (
+    <div className="flex justify-center inset-x-0 bottom-0 p-5">
+      <p className="text-gray-400">Made with ❤️ by Anikesh</p>
+    </div>
+  );
 }
 
 export default Footer;
