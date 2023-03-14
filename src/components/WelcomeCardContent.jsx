@@ -1,9 +1,7 @@
-import { CardContent, Typography, Button } from "@mui/material";
-import React, { useState } from "react";
+import { CardContent, Typography } from "@mui/material";
+import React  from "react";
 
 function WelcomeCardContent() {
-  const [readMore, setReadMore] = useState(false);
-
   return (
     <CardContent>
       <Typography variant="h6" color="text.primary">
@@ -14,12 +12,9 @@ function WelcomeCardContent() {
         <div style={{ paddingLeft: "2%" }} className="my-3">
           <div>
             Hi, I am Anikesh, a software engineer by profession. A tech
-            enthusiast, always looking to grow professionally and have fun. 
-            Being a backend java developer, I have keen interest on frontend as well.
-            So, let's have a small overview of my skillset.
-            {/* <Button variant="text" onClick={() => setReadMore(!readMore)}>
-              {!readMore ? `Read More...` : `Read less`}
-            </Button> */}
+            enthusiast, always looking to grow professionally and have fun.
+            Being a backend java developer, I have keen interest on frontend as
+            well. So, let's have a small overview of my skillset.
           </div>
         </div>
       </Typography>
