@@ -57,7 +57,7 @@ class SkillsCardContent extends Component {
             <ListItemText secondary="JEE Fullstack developer" />
           </ListItem>
           <ListItemButton onClick={handleSalesforceDropDownClick}>
-            <ListItemText secondary="Salesforce Certified Platform Developer I" />
+            <ListItemText secondary="Certifications" />
             {this.state.salesforceDropdown ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
           <Collapse in={this.state.salesforceDropdown}>
@@ -68,10 +68,21 @@ class SkillsCardContent extends Component {
                 href="https://trailblazer.me/id/asinha0498"
                 color="inherit"
               >
-                <ListItemText secondary="Trailblazer profile" />
+                <ListItemText secondary="Salesforce Platform Developer I" />
               </Link>
             </ListItem>
+            <ListItem sx={{ pl: 4 }}>
+              {/* <Link
+                underline="none"
+                target="_blank"
+                href="https://trailblazer.me/id/asinha0498"
+                color="inherit"
+              > */}
+                <ListItemText secondary="AWS Developer Associate" />
+              {/* </Link> */}
+            </ListItem>
           </Collapse>
+          
 
           <ListItemButton onClick={handleDatabaseButtonClick}>
             <ListItemText secondary="Databases" />
